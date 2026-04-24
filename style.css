@@ -3,22 +3,22 @@ body {
 }
 
 @font-face {
-    font-family:"kulture";
+    font-family:'kulture';
     src: url('Kulturë\ Type.woff') format('woff');
-
 }
 
-@font-face {
-    font-family:"space mono";
-    src: url(SpaceMono-Regular.woff) format('woff');
 
+div.title {
+    font-family:'kulture';
+    font-size:100px;
+    text-align:center; 
+    line-height:170px;
+    margin-bottom:100px;
 }
 
-h1 {
-    font-family:"kulture";
-}
+div.contents {
+    font-size:30px;
+    line-height:40px;
+    text-align:center;
 
-p {
-    font-family:"space mono";
-    color:navy;
 }
