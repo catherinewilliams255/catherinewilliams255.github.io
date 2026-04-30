@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(172, 166, 191);
+    background-color:#141414;
 }
 
 @font-face {
@@ -14,11 +14,13 @@ div.title {
     text-align:center; 
     line-height:170px;
     margin-bottom:100px;
+    color:#eff0f2;
 }
 
 div.contents {
     font-size:30px;
     line-height:40px;
     text-align:center;
+    color:#eff0f2;
 
 }
