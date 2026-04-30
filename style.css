@@ -30,6 +30,9 @@ div.contents {
     text-align:center;
     color:#eff0f2;
     text-align:left;
-    
+}
 
+div.intro {
+    text-align:right;
+    
 }
