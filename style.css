@@ -7,6 +7,12 @@ body {
     src: url('Kulturë\ Type.woff') format('woff');
 }
 
+@font-face {
+    font-family:'space mono';
+    src: url('SpaceMono-Regular.woff') format('woff');
+
+}
+
 
 div.title {
     font-family:'kulture';
@@ -18,6 +24,7 @@ div.title {
 }
 
 div.contents {
+    font-family:'space mono';
     font-size:30px;
     line-height:40px;
     text-align:center;
