@@ -196,7 +196,9 @@ style
       color:#000000;
       padding-top:10%;
       opacity: 80%;
-      
+     animation:
+        glitch-flicker 3s infinite,
+
     }
 
   
@@ -211,7 +213,67 @@ style
       right:22px;
       margin-right:-101.5px;
       box-align:var(spread);
+      animation:
+        glitch-flicker 2s infinite,
+        glitch-shift 2s infinite;
+
+    text-shadow:
+        -1px 0 rgba(255,0,0,0.5),
+         1px 0 rgba(0,255,255,0.5);
     }
+    @keyframes glitch-shift {
+
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    20% {
+        transform: translate(-1px, 1px);
+    }
+
+    40% {
+        transform: translate(1px, -1px);
+    }
+
+    60% {
+        transform: translate(-2px, 0px);
+    }
+
+    80% {
+        transform: translate(2px, 1px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes glitch-flicker {
+
+    0% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    10% {
+        opacity: 0.8;
+        filter: blur(1px);
+    }
+
+    20% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+   
 
      .marquee {
       width: 100%;
@@ -299,6 +361,9 @@ style
       right:22px;
       font-size:11px;
       line-height:1;
+       animation:
+        glitch-flicker 2s infinite,
+        glitch-shift 4s infinite;
 
     }
 
@@ -311,6 +376,9 @@ style
       height:450px;
       padding:30px;
       background:#000000;
+       animation:
+        glitch-flicker 4s infinite,
+        glitch-shift 1s infinite;
     }
 
     .family-footnote {
@@ -323,6 +391,9 @@ style
       margin-top:-12px;
       right:22px;
       margin-right:-101.5px;
+       animation:
+        glitch-flicker 2s infinite,
+        glitch-shift 3s infinite;
     }
 
     .footprints {
@@ -333,6 +404,9 @@ style
       height:450px;
       padding:30px;
       background:#000000;
+       animation:
+        glitch-flicker 3s infinite,
+        glitch-shift 2s infinite;
     }
 
     .footprint-footnote {
@@ -345,6 +419,9 @@ style
       right:22px;
       margin-right:-101.5px;
       margin-top:15px;
+       animation:
+        glitch-flicker 2s infinite,
+        glitch-shift 4s infinite;
     }
 
     .gallery {
@@ -355,6 +432,9 @@ style
   
       padding:30px;
       background:#000000;
+       animation:
+        glitch-flicker 2s infinite,
+        glitch-shift 3s infinite;
     }
     .gallery-footnote {
        font-family:'space mono';
@@ -366,6 +446,9 @@ style
       right:22px;
       margin-right:-101.5px;
       margin-top:12px;
+       animation:
+        glitch-flicker 3s infinite,
+        glitch-shift 2s infinite;
     }
 
 
@@ -379,6 +462,9 @@ style
       right:22px;
       margin-right:-101.5px;
       margin-top:-12px;
+       animation:
+        glitch-flicker 3s infinite,
+        glitch-shift 1s infinite;
     }
 
     .debris {
@@ -388,6 +474,9 @@ style
       height:450px;
       padding:30px;
       background:#000000;
+       animation:
+        glitch-flicker 2s infinite,
+        glitch-shift 2s infinite;
     }
 
 
